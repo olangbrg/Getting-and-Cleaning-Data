@@ -14,7 +14,7 @@ This script does the following:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Also, as required it can be run as long as the Samsung data is in your working directory.
-So first to make sure we have the data. If not we'll download it.
+So first to make sure we have the data. If not we'll download it and unzip the files.
 The next step (1) merges the training and the test sets to create one data set, creating the data.frame: mrg1.
 
 Step 2 extracts only the measurements on the mean and standard deviation for each measurement, creating the data.frame: tidy1.
