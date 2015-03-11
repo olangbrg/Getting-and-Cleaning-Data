@@ -29,3 +29,6 @@ each variable for each activity and each subject, creating the last data.frame: 
 
 The final step creates a txt file to upload.
 
+#Dependencies
+
+run_analysis.R depends on data.table.
