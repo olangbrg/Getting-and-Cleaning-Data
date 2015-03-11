@@ -41,8 +41,7 @@ subject_test1 <- read.table("./project/data/subject_test.txt", col.names = "subj
 subject_train1 <- read.table("./project/data/subject_train.txt", col.names = "subject")
 subject1 <- rbind(subject_test1, subject_train1)
 mrg3 <- as.data.table(cbind(subject1,LabeledX))
-##tidy2 <- aggregate(mrg3, by = list(mrg3$activity, mrg3$subject), sum)
 tidy2<-mrg3[, lapply(.SD, mean), by = c("subject", "activity")]
-## crating a txt file to upload
+## creating a txt file to upload
 write.table(tidy2, file='tidy2.txt', row.names=FALSE)
 
